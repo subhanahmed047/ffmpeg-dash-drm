@@ -1,0 +1,12 @@
+{
+  "name": "drm",
+  "version": "1.0.0",
+  "description": "Encode, Package, and Run a dash and hls stream both with and without DRM",
+  "main": "src/player.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Subhan Ahmed",
+  "license": "ISC"
+}

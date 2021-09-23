@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Generated with https://github.com/google/shaka-packager version v2.5.1-9f11077-release-->
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011" minBufferTime="PT2S" type="static" mediaPresentationDuration="PT95.69999694824219S">
+  <Period id="0">
+    <AdaptationSet id="0" contentType="video" maxWidth="1920" maxHeight="1080" frameRate="15360/512" subsegmentAlignment="true" par="16:9">
+      <Representation id="0" bandwidth="1017932" codecs="avc1.4d401f" mimeType="video/mp4" sar="1280:1281" width="854" height="480">
+        <BaseURL>h264_480p.mp4</BaseURL>
+        <SegmentBase indexRange="888-1111" timescale="15360">
+          <Initialization range="0-887"/>
+        </SegmentBase>
+      </Representation>
+      <Representation id="1" bandwidth="647807" codecs="avc1.42c01e" mimeType="video/mp4" sar="1:1" width="640" height="360">
+        <BaseURL>h264_360p.mp4</BaseURL>
+        <SegmentBase indexRange="832-1055" timescale="15360">
+          <Initialization range="0-831"/>
+        </SegmentBase>
+      </Representation>
+      <Representation id="2" bandwidth="3021695" codecs="avc1.4d4028" mimeType="video/mp4" sar="1:1" width="1280" height="720">
+        <BaseURL>h264_720p.mp4</BaseURL>
+        <SegmentBase indexRange="867-1090" timescale="15360">
+          <Initialization range="0-866"/>
+        </SegmentBase>
+      </Representation>
+      <Representation id="4" bandwidth="6143090" codecs="avc1.64002a" mimeType="video/mp4" sar="1:1" width="1920" height="1080">
+        <BaseURL>h264_1080p.mp4</BaseURL>
+        <SegmentBase indexRange="874-1097" timescale="15360">
+          <Initialization range="0-873"/>
+        </SegmentBase>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="1" contentType="audio" subsegmentAlignment="true">
+      <Representation id="3" bandwidth="130099" codecs="mp4a.40.2" mimeType="audio/mp4" audioSamplingRate="44100">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+        <BaseURL>audio.mp4</BaseURL>
+        <SegmentBase indexRange="801-1024" timescale="44100">
+          <Initialization range="0-800"/>
+        </SegmentBase>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
